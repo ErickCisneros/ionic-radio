@@ -1,0 +1,14 @@
+.card-content {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+.card-center {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

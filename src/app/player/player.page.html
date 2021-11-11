@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Reproductor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="container">
+  <ion-card class="card-center">
+    <img [src]="dataService.radioActual ? dataService.radioActual.logo : imageDefault" />
+    <ion-card-header>
+      <ion-card-subtitle>Radio</ion-card-subtitle>
+      <ion-card-title>{{ nombreRadio }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="card-content">
+      <ion-button color="medium" (click)="stop()">
+        <ion-icon name="stop-outline"></ion-icon>
+      </ion-button>
+      <ion-button color="medium" (click)="stop()">
+        <ion-icon name="pause-outline"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
